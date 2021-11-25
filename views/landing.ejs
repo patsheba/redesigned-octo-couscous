@@ -1,0 +1,37 @@
+<% include partials/header %>
+    <body>
+        <div class="container landing-container">
+             <h1 class="text-center">Library Management System</h1>
+             <% include partials/alerts %>
+            <div class="row landing-cards">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Admin Portal</h5>
+                            <p class="card-text">For users with an administrative role.</p>
+                            <a href="/auth/admin-login" class="btn btn-block btn-info">Admin Login</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">User Portal</h5>
+                            <p class="card-text">For Normal users login and signup.</p>
+                            <a href="/auth/user-login" class="btn btn-block btn-info">User Login/Signup</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Book Catalogue</h5>
+                            <p class="card-text">For browsing the available books.</p>
+                            <a href="/books/all/all/1" class="btn btn-block btn-info">Explore Library</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+<% include partials/footer %>

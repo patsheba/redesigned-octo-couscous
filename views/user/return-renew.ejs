@@ -29,7 +29,7 @@
               <tr>
                 <th>Title</th>
                 <th>Author</th>
-                <th>Issue date</th>
+                <th>Borrow date</th>
                 <th>Return date</th>
                 <th>Category</th>
                 <th></th>
@@ -38,7 +38,7 @@
             <tbody>
               <% user.forEach(book => { %>
                 <tr>
-                <td>You have issued <%=book.book_info.title%></td></td>
+                <td>You have borrowed <%=book.book_info.title%></td></td>
                 <td><%=book.book_info.author%></td>
                 <td><%=book.book_info.issueDate.toDateString()%></td>
                 <td><%=book.book_info.returnDate.toDateString()%></td>
@@ -63,17 +63,7 @@
               <% }) %>
             </tbody>
           </table>
-          
-          <!--<nav class="ml-3">-->
-          <!--  <ul class="pagination offset-md-4">-->
-          <!--    <li class="page-item disabled"><a href="#" class="page-link"><i class="fa fa-angle-double-left"></i> Previous</a></li>-->
-          <!--    <li class="page-item active"><a href="#" class="page-link">1</a></li>-->
-          <!--    <li class="page-item"><a href="#" class="page-link">2</a></li>-->
-          <!--    <li class="page-item"><a href="#" class="page-link">3</a></li>-->
-          <!--    <li class="page-item"><a href="#" class="page-link">Next <i class="fa fa-angle-double-right"></i></a></li>-->
-          <!--  </ul>-->
-          <!--</nav>-->
-          
+
         </div>
       </div>
     </div>

@@ -27,14 +27,14 @@ Open git bash or command line tools at application file and run following npm co
 ## Run the application
 All data in this application stored in MongoDB. Make sure MongoDB installed in your machine or environment. Keep `mongod` running on background and run `node app.js` on app folder. That's it! 
 
-## Functionalitites
+## Functionalities
 
 Whole app is divided into three modules.
 
 * Admin
 * User
 * Browse books
-
+* ``For Borrowed books the default return date is 7 days after borrowing``
 ### Admin module functionalities
 * Sign up (This route is hidden. only accessible by typing the route manually and when admin log in)
 * Login
@@ -45,9 +45,8 @@ Whole app is divided into three modules.
 * Delete books
 * Search books by category, title, author, ISBN
 * Find users by firstname, lastname, email and username
-* Delete user acount
+* Delete user account
 * Restrict individual user if violate any terms and conditions
-* Send notification to all/individual/filtered user (not ready yet, will be added as soon as I learn socket.io)
 * Browse books showcase
 * Update admin profile and password
 * Add new admin
@@ -58,13 +57,11 @@ Whole app is divided into three modules.
 * Login
 * Logout
 * Track own activities
-* Issue books
+* Borrow books
 * Renew books
-* Return books
-* Pay fines (not ready yet, will be added asap)
+* Return borrowed books
 * Browse books showcase 
 * Add, edit and delete comment on any books comment section
-* Upload/Update profile picture
 * Update profile and password
 * Delete account 
 

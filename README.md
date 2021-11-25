@@ -1,6 +1,5 @@
 # Library-Management-System
-A simple online library management system built with MongodDB, Express.js and Node.js. [Click here](https://demo-library-system.herokuapp.com/) to see the application
-
+An online library management system built in mongodb, nodejs, express
 ## Techonologies used in this application
 
 ### Front-end

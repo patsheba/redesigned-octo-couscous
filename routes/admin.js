@@ -1,8 +1,6 @@
 const express = require("express"),
       router = express.Router(),
       passport = require("passport"),
-      // fs = require("fs"),
-      // path = require("path"),
       middleware = require("../middleware"),
       User = require("../models/user"),
       Book = require("../models/book"),
@@ -71,10 +69,5 @@ router.post("/admin/profile", middleware.isAdmin, adminController.postUpdateAdmi
 
 //admin -> update password
 router.put("/admin/update-password", middleware.isAdmin, adminController.putUpdateAdminPassword);
-
-// //admin -> notifications
-// router.get("/admin/notifications", (req, res) => {
-//    res.send("This route is still under development. will be added in next version");
-// });
 
 module.exports = router;
